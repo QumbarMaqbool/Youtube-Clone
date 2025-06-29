@@ -1,0 +1,35 @@
+/* Ensure proper layout for the grid container */
+.grid-container {
+  display: grid; /* Enables grid layout */
+  grid-template-columns: 1fr 5fr; /* Navigator gets 1 fraction, Card gets 6 fractions */
+  gap: 20px; /* Space between Navigator and Card components */
+  margin-top: 20px; /* Add space below the Navbar */
+  padding: 20px; /* Add padding around the content */
+  width: 100%; /* Full width for the container */
+  box-sizing: border-box; /* Include padding and border in width/height */
+}
+
+/* Adjust the spacing for Navigator */
+.sideBar {
+  background-color: #f8f9fa; /* Add a light background to differentiate */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional: Shadow for depth */
+  height: calc(100vh - 75px); /* Full height minus navbar height */
+  overflow-y: auto; /* Scrollable sidebar if content overflows */
+}
+
+/* Adjust the card layout and spacing */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between the cards */
+  justify-content: flex-start; /* Align cards to the left */
+}
+
+.card {
+  width: 18rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+}

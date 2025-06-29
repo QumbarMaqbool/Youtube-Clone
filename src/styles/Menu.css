@@ -1,0 +1,33 @@
+/* Menu container adjustments */
+.menu-container {
+    display: flex;
+    padding-top: 10px;
+    margin-top: 0; /* Ensure no gap between navbar and menu */
+    margin-left: 270px; /* Ensure it does not overlap the fixed Navigator */
+    overflow-x: hidden; /* Hide overflowing buttons initially */
+    white-space: nowrap; /* Prevent buttons from wrapping */
+    position: relative;
+    transition: overflow-x 0.3s ease-in-out;
+  }
+  
+  /* Allow horizontal scrolling on hover */
+  .menu-container:hover {
+    overflow-x: auto;
+  }
+  
+  .menu-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Webkit browsers */
+  }
+  
+  .menu-container {
+    -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+  }
+  
+  .btn {
+    margin-left: 10px;
+    background-color: aqua;
+    white-space: nowrap;
+    flex-shrink: 0; /* Prevent buttons from shrinking */
+  }
+  

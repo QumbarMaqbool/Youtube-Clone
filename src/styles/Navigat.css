@@ -1,0 +1,57 @@
+/* Ensure the entire Navigator takes full viewport height */
+.navigator {
+  height: 100vh; /* Full viewport height */
+}
+
+/* Fixed sidebar (Navigator) */
+.sideBar {
+  position: fixed; /* Fix the Navigator so it stays in place while scrolling */
+  top: 0; /* Start from the top */
+  left: 0; /* Align to the left */
+  width: 250px; /* Fixed width for the sidebar */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #ffffff; /* Background color */
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  z-index: 1100; /* Ensure it's above the content */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: flex-start; /* Start stacking from the top */
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds */
+}
+
+/* Hide scrollbars but allow scrolling */
+.sideBar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Webkit browsers */
+}
+
+.sideBar {
+  -ms-overflow-style: none;  /* Hide scrollbar in Internet Explorer and Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* Styling for navbar brand (logo) */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.navbar-brand img {
+  height: 50px; /* Adjust the height of the logo */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Sidebar item styles */
+dt {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Icons in the sidebar */
+.homeIcon, .short, .sub {
+  height: 35px;
+  margin-right: 10px; /* Add space between the icon and the text */
+}
